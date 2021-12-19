@@ -18,6 +18,7 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -29,13 +30,17 @@
             <input type="submit" value="Search" class="btn btn-primary search-button">
           </form>
         </div>
+          <div class="col-6">
+          <button type="button" class="btn btn-secondary">Current Location</button>
+      
+        </div>
         <div class="row">
           <div class="col-md-3">
             <p>
               <span class="emoji-heading">❄️</span>
               <!-- insert C to F-->
-              <span id="degrees"> 40&deg;</span>
-              <span id="celsius">C</span>|<span id="fahrenheit">F</span>
+              <span id="degrees"> &deg;</span>
+              <!---<span id="celsius">C</span>| <span id="fahrenheit">F</span> -->
             </p>
           </div>
           <div class="col-md-3">
@@ -47,7 +52,7 @@
             </p>
           </div>
           <div class="col-md-3">
-            <h2 class="precipitation-heading">Precipitation: 90%</h2>
+            <h2 class="precipitation-heading">Precipitation: </h2>
             <h3 class="wind-heading">Wind: 5km/h</h3>
           </div>
           <div class="col-md-3"></div>
@@ -118,6 +123,6 @@
         </div>
       </div>
     </div>
-    <script src="weather-app.js"></script>
+    <script src="src/weather-app.js"></script>
   </body>
 </html>
